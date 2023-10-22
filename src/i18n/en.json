@@ -1,0 +1,17 @@
+{
+  "home": {
+    "description": "Share files to anywhere.",
+    "attributeFree": "Free",
+    "attributeFreeDescription": "Share with anyone anywhere freely, on all platforms.",
+    "attributePrivate": "Private",
+    "attributePrivateDescription": "Data transfer directly between devices and never touch any server.",
+    "attributeSecure": "Secure",
+    "attributeSecureDescription": "Data are encrypted in transit."
+  },
+  "download": {
+    "title": "Download"
+  },
+  "footer": {
+    "support": "Support"
+  }
+}
