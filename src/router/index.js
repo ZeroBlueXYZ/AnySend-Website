@@ -18,6 +18,11 @@ const routes = [
         path: "download",
         name: "Download",
         component: () => import('@/views/Download.vue'),
+      },
+      {
+        path: "privacy",
+        name: "Privacy",
+        component: () => import('@/views/Privacy.vue'),
       }
     ],
   },
