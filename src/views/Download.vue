@@ -8,16 +8,9 @@
               <v-icon size="x-large" start>mdi-microsoft-windows</v-icon>
             </v-col>
             <v-col>
-              <v-row>
-                <v-chip size="large" class="ma-1">.msix x64</v-chip>
-                <v-chip size="large" class="ma-1">.msix x86</v-chip>
-                <v-chip size="large" class="ma-1">.msix arm64</v-chip>
-              </v-row>
-              <v-row>
-                <v-chip size="large" class="ma-1">.zip x64</v-chip>
-                <v-chip size="large" class="ma-1">.zip x86</v-chip>
-                <v-chip size="large" class="ma-1">.zip arm64</v-chip>
-              </v-row>
+              <v-btn :href="windowsDownloadUrl" size="large">
+                {{ $t("message.download.title") }}
+              </v-btn>
             </v-col>
           </v-row>
           <v-row class="py-1">
@@ -25,16 +18,9 @@
               <v-icon size="x-large" start>mdi-linux</v-icon>
             </v-col>
             <v-col>
-              <v-row>
-                <v-chip size="large" class="ma-1">.tar x64</v-chip>
-                <v-chip size="large" class="ma-1">.tar x86</v-chip>
-                <v-chip size="large" class="ma-1">.tar arm64</v-chip>
-              </v-row>
-              <v-row>
-                <v-chip size="large" class="ma-1">.AppImage x64</v-chip>
-                <v-chip size="large" class="ma-1">.AppImage x86</v-chip>
-                <v-chip size="large" class="ma-1">.AppImage arm64</v-chip>
-              </v-row>
+              <v-btn :href="linuxDownloadUrl" size="large">
+                {{ $t("message.download.title") }}
+              </v-btn>
             </v-col>
           </v-row>
           <v-row class="py-1">
@@ -74,7 +60,34 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
-const tab = ref('windows')
+const apiUrl = 'https://api.github.com/repos/ZeroBlueXYZ/AnySend/releases'
+const windowsDownloadUrl = ref(apiUrl)
+const linuxDownloadUrl = ref(apiUrl)
+
+onMounted(async () => {
+  var assets = await getReleaseAssets()
+  for (var asset of assets) {
+    if (asset['name'].endsWith('.exe')) {
+      windowsDownloadUrl.value = asset['browser_download_url']
+    } else if (asset['name'].endsWith('.zip')) {
+      linuxDownloadUrl.value = asset['browser_download_url']
+    }
+  }
+})
+
+async function getReleaseAssets(){
+  return await fetch(apiUrl, {
+    method: 'GET',
+    headers: {
+      Accept: 'application/vnd.github+json'
+    }
+  }).then((resp) => {
+    if (resp.ok) return resp.json().then(
+      (data) => {
+        return data[0]["assets"]
+      })
+  })
+}
 </script>
