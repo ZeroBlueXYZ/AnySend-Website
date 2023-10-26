@@ -5,31 +5,11 @@
         <v-container class="mx-auto">
           <v-row class="py-1">
             <v-col cols="2">
-              <v-icon size="x-large" start>mdi-microsoft-windows</v-icon>
+              <v-icon size="x-large" start>mdi-android</v-icon>
             </v-col>
             <v-col>
-              <v-btn :href="windowsDownloadUrl" size="large">
-                {{ $t("message.download.title") }}
-              </v-btn>
-            </v-col>
-          </v-row>
-          <v-row class="py-1">
-            <v-col cols="2">
-              <v-icon size="x-large" start>mdi-linux</v-icon>
-            </v-col>
-            <v-col>
-              <v-btn :href="linuxDownloadUrl" size="large">
-                {{ $t("message.download.title") }}
-              </v-btn>
-            </v-col>
-          </v-row>
-          <v-row class="py-1">
-            <v-col cols="2">
-              <v-icon size="x-large" start>mdi-apple</v-icon>
-            </v-col>
-            <v-col>
-              <a href="https://apps.apple.com">
-                <img alt="Mac App Store" src="@/assets/mac-app-store-badge.svg" height="40">
+              <a href="https://play.google.com/store/apps/details?id=xyz.zeroblue.anysend">
+                <img alt="Google Play" src="@/assets/google-play-badge.png" height="40">
               </a>
             </v-col>
           </v-row>
@@ -45,12 +25,39 @@
           </v-row>
           <v-row class="py-1">
             <v-col cols="2">
-              <v-icon size="x-large" start>mdi-android</v-icon>
+              <v-icon size="x-large" start>mdi-apple</v-icon>
             </v-col>
             <v-col>
-              <a href="https://play.google.com">
-                <img alt="Google Play" src="@/assets/google-play-badge.png" height="40">
+              <a href="https://apps.apple.com">
+                <img alt="Mac App Store" src="@/assets/mac-app-store-badge.svg" height="40">
               </a>
+            </v-col>
+          </v-row>
+          <v-row class="py-1">
+            <v-col cols="2">
+              <v-icon size="x-large" start>mdi-microsoft-windows</v-icon>
+            </v-col>
+            <v-col>
+              <v-btn :href="windowsDownloadUrl" size="large">
+                {{ $t("message.download.title") }}
+              </v-btn>
+            </v-col>
+          </v-row>
+          <v-row class="py-1">
+            <v-col cols="2">
+              <v-icon size="x-large" start>mdi-linux</v-icon>
+            </v-col>
+            <v-col>
+              <v-row class="mx-0">
+                <v-btn :href="linuxDownloadUrl" size="large">
+                  {{ $t("message.download.title") }}
+                </v-btn>
+              </v-row>
+              <v-row class="mx-0">
+                <v-code>
+                  Dependencies: apt-get install libgtk-3-0 libblkid1 liblzma5
+                </v-code>
+              </v-row>
             </v-col>
           </v-row>
         </v-container>
@@ -77,7 +84,7 @@ onMounted(async () => {
   }
 })
 
-async function getReleaseAssets(){
+async function getReleaseAssets () {
   return await fetch(apiUrl, {
     method: 'GET',
     headers: {
