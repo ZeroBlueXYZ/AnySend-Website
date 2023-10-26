@@ -55,7 +55,7 @@
               </v-row>
               <v-row class="mx-0">
                 <v-code>
-                  Dependencies: apt-get install libgtk-3-0 libblkid1 liblzma5
+                  {{ $t("message.download.dependencies") }}: apt-get install libgtk-3-0 libblkid1 liblzma5
                 </v-code>
               </v-row>
             </v-col>

@@ -9,7 +9,8 @@
     "attributeSecureDescription": "数据在传输过程中加密。"
   },
   "download": {
-    "title": "下载"
+    "title": "下载",
+    "dependencies": "依赖"
   },
   "footer": {
     "privacy": "隐私",

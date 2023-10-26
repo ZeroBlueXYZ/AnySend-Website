@@ -9,7 +9,8 @@
     "attributeSecureDescription": "Data are encrypted in transit."
   },
   "download": {
-    "title": "Download"
+    "title": "Download",
+    "dependencies": "Dependencies"
   },
   "footer": {
     "privacy": "Privacy",
