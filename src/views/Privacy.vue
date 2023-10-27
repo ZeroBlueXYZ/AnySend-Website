@@ -1,6 +1,6 @@
 <template>
   <div class="pa-8">
-  <h1>Privacy Policy</h1>
+  <h1>ZeroBlue AnySend Privacy Policy</h1>
   <p>Last updated: October 24, 2023</p>
   <br>
 
