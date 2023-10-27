@@ -19,13 +19,13 @@ const routes = [
         name: "Download",
         component: () => import('@/views/Download.vue'),
       },
+      {
+        path: "privacy",
+        name: "Privacy",
+        component: () => import('@/views/Privacy.vue'),
+      }
     ],
   },
-  {
-    path: "/privacy",
-    name: "Privacy",
-    component: () => import('@/views/Privacy.vue'),
-  }
 ]
 
 const router = createRouter({
