@@ -10,7 +10,8 @@
   },
   "download": {
     "title": "下载",
-    "dependencies": "依赖"
+    "dependencies": "依赖",
+    "comingSoon": "即将到来"
   },
   "footer": {
     "privacy": "隐私",
