@@ -1,12 +1,12 @@
 {
   "home": {
     "description": "分享文件到任何地方。",
-    "attributeFree": "没有限制",
-    "attributeFreeDescription": "与任何地方的任何人无限制分享，在所有平台可用。",
     "attributePrivate": "隐私",
     "attributePrivateDescription": "数据直接在设备之间传输，不经过任何服务器。",
     "attributeSecure": "安全",
-    "attributeSecureDescription": "数据在传输过程中加密。"
+    "attributeSecureDescription": "数据在传输过程中加密。",
+    "attributeCrossPlatform": "跨平台",
+    "attributeCrossPlatformDescription": "在所有平台可用."
   },
   "download": {
     "title": "下载",

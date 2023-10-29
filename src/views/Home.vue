@@ -14,16 +14,6 @@
       <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
         <v-card-item>
           <v-card-title>
-            {{ $t("message.home.attributeFree") }}
-          </v-card-title>
-          <v-card-subtitle class="text-subtitle-1">
-            {{ $t("message.home.attributeFreeDescription") }}
-          </v-card-subtitle>
-        </v-card-item>
-      </v-card>
-      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
-        <v-card-item>
-          <v-card-title>
             {{ $t("message.home.attributePrivate") }}
           </v-card-title>
           <v-card-subtitle class="text-subtitle-1">
@@ -38,6 +28,16 @@
           </v-card-title>
           <v-card-subtitle class="text-subtitle-1">
             {{ $t("message.home.attributeSecureDescription") }}
+          </v-card-subtitle>
+        </v-card-item>
+      </v-card>
+      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
+        <v-card-item>
+          <v-card-title>
+            {{ $t("message.home.attributeCrossPlatform") }}
+          </v-card-title>
+          <v-card-subtitle class="text-subtitle-1">
+            {{ $t("message.home.attributeCrossPlatformDescription") }}
           </v-card-subtitle>
         </v-card-item>
       </v-card>
