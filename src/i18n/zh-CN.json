@@ -6,7 +6,7 @@
     "attributeSecure": "安全",
     "attributeSecureDescription": "数据在传输过程中加密。",
     "attributeCrossPlatform": "跨平台",
-    "attributeCrossPlatformDescription": "在所有平台可用."
+    "attributeCrossPlatformDescription": "在所有平台可用。"
   },
   "download": {
     "title": "下载",
