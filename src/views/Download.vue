@@ -79,9 +79,9 @@ const linuxDownloadUrl = ref(apiUrl)
 onMounted(async () => {
   var assets = await getReleaseAssets()
   for (var asset of assets) {
-    if (asset['name'].endsWith('.exe')) {
+    if (asset['name'].endsWith('.zip')) {
       windowsDownloadUrl.value = asset['browser_download_url']
-    } else if (asset['name'].endsWith('.zip')) {
+    } else if (asset['name'].endsWith('.tar.gz')) {
       linuxDownloadUrl.value = asset['browser_download_url']
     }
   }
