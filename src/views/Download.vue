@@ -41,9 +41,9 @@
               <v-icon size="x-large" start>mdi-microsoft-windows</v-icon>
             </v-col>
             <v-col>
-              <v-btn :href="windowsDownloadUrl" size="large">
-                {{ $t("message.download.title") }}
-              </v-btn>
+              <a href="https://www.microsoft.com/store/apps/9NPKG5X6W2SZ">
+                <img alt="Microsoft Store" src="@/assets/microsoft-store-badge.svg" height="40">
+              </a>
             </v-col>
           </v-row>
           <v-row class="py-1">
@@ -73,15 +73,12 @@
 import { onMounted, ref } from 'vue'
 
 const apiUrl = 'https://api.github.com/repos/ZeroBlueXYZ/AnySend/releases'
-const windowsDownloadUrl = ref(apiUrl)
 const linuxDownloadUrl = ref(apiUrl)
 
 onMounted(async () => {
   var assets = await getReleaseAssets()
   for (var asset of assets) {
-    if (asset['name'].endsWith('.zip')) {
-      windowsDownloadUrl.value = asset['browser_download_url']
-    } else if (asset['name'].endsWith('.tar.gz')) {
+    if (asset['name'].endsWith('.tar.gz')) {
       linuxDownloadUrl.value = asset['browser_download_url']
     }
   }
