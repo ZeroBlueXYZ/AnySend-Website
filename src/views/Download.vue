@@ -18,12 +18,9 @@
               <v-icon size="x-large" start>mdi-apple-ios</v-icon>
             </v-col>
             <v-col>
-              <!-- <a href="https://apps.apple.com">
+              <a href="https://apps.apple.com/app/zeroblue-anysend/id6470259250">
                 <img alt="App Store" src="@/assets/app-store-badge.svg" height="40">
-              </a> -->
-              <div class="text-h6">
-                {{ $t("message.download.comingSoon") }}
-              </div>
+              </a>
             </v-col>
           </v-row>
           <v-row class="py-1">
@@ -46,7 +43,7 @@
               </a>
             </v-col>
           </v-row>
-          <v-row class="py-1">
+          <!-- <v-row class="py-1">
             <v-col cols="2">
               <v-icon size="x-large" start>mdi-linux</v-icon>
             </v-col>
@@ -62,7 +59,7 @@
                 </v-code>
               </v-row>
             </v-col>
-          </v-row>
+          </v-row> -->
         </v-container>
       </v-card>
     </v-responsive>

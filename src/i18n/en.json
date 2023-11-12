@@ -10,8 +10,7 @@
   },
   "download": {
     "title": "Download",
-    "dependencies": "Dependencies",
-    "comingSoon": "Coming soon"
+    "dependencies": "Dependencies"
   },
   "footer": {
     "privacy": "Privacy",
