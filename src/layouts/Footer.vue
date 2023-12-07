@@ -7,7 +7,7 @@
         </v-col>
         <v-spacer></v-spacer>
         <v-col cols="auto" class="py-1">
-          <v-btn variant="text" href="https://github.com/ZeroBlueXYZ/AnySend/issues">
+          <v-btn variant="text" href="https://github.com/ZeroBlueXYZ/FileDirect/issues">
             {{ $t("message.footer.support") }}
           </v-btn>
         </v-col>
