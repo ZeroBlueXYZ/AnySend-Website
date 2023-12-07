@@ -4,11 +4,10 @@
     "fullDescription": "Free, open source, private, secure, cross-platform."
   },
   "download": {
-    "title": "Download",
-    "dependencies": "Dependencies"
+    "title": "Download"
   },
   "footer": {
-    "privacy": "Privacy",
+    "privacy": "Privacy Policy",
     "support": "Support"
   }
 }

@@ -4,11 +4,10 @@
     "fullDescription": "免费、开源、隐私、安全、跨平台."
   },
   "download": {
-    "title": "下载",
-    "dependencies": "依赖"
+    "title": "下载"
   },
   "footer": {
-    "privacy": "隐私",
+    "privacy": "隐私政策",
     "support": "技术支持"
   }
 }
