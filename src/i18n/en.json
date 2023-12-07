@@ -1,6 +1,6 @@
 {
   "home": {
-    "description": "Share files to anywhere.",
+    "description": "Share and receive files with any devices.",
     "attributePrivate": "Private",
     "attributePrivateDescription": "Data transfer directly between devices and never touch any server.",
     "attributeSecure": "Secure",

@@ -1,6 +1,6 @@
 {
   "home": {
-    "description": "分享文件到任何地方。",
+    "description": "在任意设备间传输文件。",
     "attributePrivate": "隐私",
     "attributePrivateDescription": "数据直接在设备之间传输，不经过任何服务器。",
     "attributeSecure": "安全",

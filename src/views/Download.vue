@@ -1,7 +1,7 @@
 <template>
   <v-container class="fill-height">
     <v-responsive class="align-center fill-height">
-      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
+      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="400">
         <v-container class="mx-auto">
           <v-row class="py-1">
             <v-col cols="2">
