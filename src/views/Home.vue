@@ -8,39 +8,12 @@
       </h1>
       <v-divider class="border-opacity-0" thickness="20"></v-divider>
       <h2 class="text-center font-weight-regular ">
-        {{ $t("message.home.description") }}
+        {{ $t("message.home.shortDescription") }}
       </h2>
-      <v-divider class="border-opacity-0" thickness="20"></v-divider>
-      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
-        <v-card-item>
-          <v-card-title>
-            {{ $t("message.home.attributePrivate") }}
-          </v-card-title>
-          <v-card-subtitle class="text-subtitle-1">
-            {{ $t("message.home.attributePrivateDescription") }}
-          </v-card-subtitle>
-        </v-card-item>
-      </v-card>
-      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
-        <v-card-item>
-          <v-card-title>
-            {{ $t("message.home.attributeSecure") }}
-          </v-card-title>
-          <v-card-subtitle class="text-subtitle-1">
-            {{ $t("message.home.attributeSecureDescription") }}
-          </v-card-subtitle>
-        </v-card-item>
-      </v-card>
-      <v-card variant="tonal" color="secondary" class="mx-auto" max-width="600">
-        <v-card-item>
-          <v-card-title>
-            {{ $t("message.home.attributeCrossPlatform") }}
-          </v-card-title>
-          <v-card-subtitle class="text-subtitle-1">
-            {{ $t("message.home.attributeCrossPlatformDescription") }}
-          </v-card-subtitle>
-        </v-card-item>
-      </v-card>
+      <v-divider class="border-opacity-0" thickness="4"></v-divider>
+      <h3 class="text-center font-weight-regular ">
+        {{ $t("message.home.fullDescription") }}
+      </h3>
     </v-responsive>
   </v-container>
 </template>

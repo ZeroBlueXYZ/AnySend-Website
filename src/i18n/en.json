@@ -1,12 +1,7 @@
 {
   "home": {
-    "description": "Share and receive files with any devices.",
-    "attributePrivate": "Private",
-    "attributePrivateDescription": "Data transfer directly between devices and never touch any server.",
-    "attributeSecure": "Secure",
-    "attributeSecureDescription": "Data are encrypted in transit.",
-    "attributeCrossPlatform": "Cross Platform",
-    "attributeCrossPlatformDescription": "Available on all platforms."
+    "shortDescription": "Share and receive files with any devices.",
+    "fullDescription": "Free, open source, private, secure, cross-platform."
   },
   "download": {
     "title": "Download",
