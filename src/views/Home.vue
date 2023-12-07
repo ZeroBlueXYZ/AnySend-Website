@@ -4,7 +4,7 @@
       <v-img height="200" src="@/assets/logo.png" />
       <v-divider class="border-opacity-0" thickness="20"></v-divider>
       <h1 class="text-h2 text-center">
-        AnySend
+        FileDirect
       </h1>
       <v-divider class="border-opacity-0" thickness="20"></v-divider>
       <h2 class="text-center font-weight-regular ">

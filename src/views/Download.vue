@@ -43,23 +43,6 @@
               </a>
             </v-col>
           </v-row>
-          <!-- <v-row class="py-1">
-            <v-col cols="2">
-              <v-icon size="x-large" start>mdi-linux</v-icon>
-            </v-col>
-            <v-col>
-              <v-row class="mx-0">
-                <v-btn :href="linuxDownloadUrl" size="large">
-                  {{ $t("message.download.title") }}
-                </v-btn>
-              </v-row>
-              <v-row class="mx-0">
-                <v-code>
-                  {{ $t("message.download.dependencies") }}: apt-get install libgtk-3-0 libblkid1 liblzma5
-                </v-code>
-              </v-row>
-            </v-col>
-          </v-row> -->
         </v-container>
       </v-card>
     </v-responsive>
@@ -67,31 +50,4 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
-
-const apiUrl = 'https://api.github.com/repos/ZeroBlueXYZ/AnySend/releases'
-const linuxDownloadUrl = ref(apiUrl)
-
-onMounted(async () => {
-  var assets = await getReleaseAssets()
-  for (var asset of assets) {
-    if (asset['name'].endsWith('.tar.gz')) {
-      linuxDownloadUrl.value = asset['browser_download_url']
-    }
-  }
-})
-
-async function getReleaseAssets () {
-  return await fetch(apiUrl, {
-    method: 'GET',
-    headers: {
-      Accept: 'application/vnd.github+json'
-    }
-  }).then((resp) => {
-    if (resp.ok) return resp.json().then(
-      (data) => {
-        return data[0]["assets"]
-      })
-  })
-}
 </script>
