@@ -30,6 +30,10 @@
 
 <script setup>
 import { ref } from 'vue'
+import microsoftStoreBadge from '@/assets/microsoft-store-badge.svg';
+import macAppStoreBadge from '@/assets/mac-app-store-badge.svg';
+import appStoreBadge from '@/assets/app-store-badge.svg';
+import googlePlayBadge from '@/assets/google-play-badge.png';
 
 class Store {
   constructor (name, appUrl, badgeUrl) {
@@ -40,10 +44,10 @@ class Store {
 }
 
 const stores = ref([
-  new Store("Microsoft Store", "https://www.microsoft.com/store/apps/9NPKG5X6W2SZ", "src/assets/microsoft-store-badge.svg"),
-  new Store("Mac App Store", "https://apps.apple.com/app/zeroblue-anysend/id6470259250", "src/assets/mac-app-store-badge.svg"),
-  new Store("App Store", "https://apps.apple.com/app/zeroblue-anysend/id6470259250", "src/assets/app-store-badge.svg"),
-  new Store("Google Play", "https://play.google.com/store/apps/details?id=xyz.zeroblue.anysend", "src/assets/google-play-badge.png"),
+  new Store('Microsoft Store', 'https://www.microsoft.com/store/apps/9NPKG5X6W2SZ', microsoftStoreBadge),
+  new Store('Mac App Store', 'https://apps.apple.com/app/zeroblue-anysend/id6470259250', macAppStoreBadge),
+  new Store('App Store', 'https://apps.apple.com/app/zeroblue-anysend/id6470259250', appStoreBadge),
+  new Store('Google Play', 'https://play.google.com/store/apps/details?id=xyz.zeroblue.anysend', googlePlayBadge),
 ])
 
 </script>
