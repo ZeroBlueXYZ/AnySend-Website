@@ -1,13 +1,13 @@
 {
   "home": {
-    "shortDescription": "Share and receive files with any devices.",
+    "shortDescription": "Share and receive files with nearby or remote devices.",
     "fullDescription": "Free, open source, secure, cross-platform."
   },
   "download": {
     "title": "Download"
   },
   "footer": {
-    "privacy": "FileDirect Privacy Policy",
+    "privacy": "Privacy Policy",
     "support": "Support"
   }
 }
