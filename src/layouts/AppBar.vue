@@ -5,9 +5,6 @@
       <v-divider class="ms-3" vertical></v-divider>
       <router-link to="/" active-class="no-decoration">FireDirect</router-link>
     </v-app-bar-title>
-    <v-btn to="/download">
-      {{ $t("message.download.title") }}
-    </v-btn>
   </v-app-bar>
 </template>
 

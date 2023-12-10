@@ -15,11 +15,6 @@ const routes = [
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
       {
-        path: "download",
-        name: "Download",
-        component: () => import('@/views/Download.vue'),
-      },
-      {
         path: "privacy",
         name: "Privacy",
         component: () => import('@/views/Privacy.vue'),

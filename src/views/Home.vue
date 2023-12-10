@@ -14,9 +14,36 @@
       <h3 class="text-center font-weight-regular ">
         {{ $t("message.home.fullDescription") }}
       </h3>
+      <v-divider class="border-opacity-0" thickness="40"></v-divider>
+      <v-card variant="text" max-width="600" class="mx-auto">
+        <v-row justify="space-between">
+          <v-col v-for="store in stores">
+            <a :href="store.appUrl">
+              <img :alt="store.name" :src="store.badgeUrl" height="40">
+            </a>
+          </v-col>
+        </v-row>
+      </v-card>
     </v-responsive>
   </v-container>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+class Store {
+  constructor (name, appUrl, badgeUrl) {
+    this.name = name;
+    this.appUrl = appUrl;
+    this.badgeUrl = badgeUrl;
+  }
+}
+
+const stores = ref([
+  new Store("Microsoft Store", "https://www.microsoft.com/store/apps/9NPKG5X6W2SZ", "src/assets/microsoft-store-badge.svg"),
+  new Store("Mac App Store", "https://apps.apple.com/app/zeroblue-anysend/id6470259250", "src/assets/mac-app-store-badge.svg"),
+  new Store("App Store", "https://apps.apple.com/app/zeroblue-anysend/id6470259250", "src/assets/app-store-badge.svg"),
+  new Store("Google Play", "https://play.google.com/store/apps/details?id=xyz.zeroblue.anysend", "src/assets/google-play-badge.png"),
+])
+
 </script>
