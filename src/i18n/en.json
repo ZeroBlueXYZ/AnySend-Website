@@ -4,7 +4,9 @@
     "fullDescription": "Free, open source, secure, cross-platform."
   },
   "footer": {
-    "privacy": "Privacy Policy",
-    "support": "Support"
+    "github": "GitHub",
+    "privacy": "Privacy",
+    "support": "Support",
+    "copyright": "Copyright © 2023 xyz.zeroblue"
   }
 }
