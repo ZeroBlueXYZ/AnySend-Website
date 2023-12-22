@@ -24,6 +24,12 @@
           </v-col>
         </v-row>
       </v-card>
+      <v-divider class="border-opacity-0" thickness="20"></v-divider>
+      <v-row justify="center">
+        <v-btn variant="text" prepend-icon="mdi-download" class="text-none" href="https://github.com/ZeroBlueXYZ/FileDirect/releases/latest">
+          {{ $t("message.home.moreDownloadOptions") }}
+        </v-btn>
+      </v-row>
     </v-responsive>
   </v-container>
 </template>

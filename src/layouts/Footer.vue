@@ -2,13 +2,13 @@
   <v-footer color="secondary" :app=true>
     <v-col>
       <v-row justify="center">
-        <v-btn variant="text" href="https://github.com/ZeroBlueXYZ/FileDirect">
+        <v-btn variant="text" class="text-none" href="https://github.com/ZeroBlueXYZ/FileDirect">
           {{ $t("message.footer.github") }}
         </v-btn>
-        <v-btn variant="text" href="https://github.com/ZeroBlueXYZ/FileDirect/issues">
+        <v-btn variant="text" class="text-none" href="https://github.com/ZeroBlueXYZ/FileDirect/issues">
           {{ $t("message.footer.support") }}
         </v-btn>
-        <v-btn variant="text" to="/privacy">
+        <v-btn variant="text" class="text-none" to="/privacy">
           {{ $t("message.footer.privacy") }}
         </v-btn>
       </v-row>

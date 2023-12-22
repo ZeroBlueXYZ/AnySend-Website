@@ -1,7 +1,8 @@
 {
   "home": {
     "shortDescription": "与附近的或远程的设备共享文件。",
-    "fullDescription": "免费、开源、安全、跨平台."
+    "fullDescription": "免费、开源、安全、跨平台.",
+    "moreDownloadOptions": "更多下载选项"
   },
   "footer": {
     "privacy": "隐私",
