@@ -23,23 +23,23 @@
             </a>
           </v-col>
         </v-row>
+        <v-row justify="center">
+          <v-btn variant="text" prepend-icon="mdi-download" class="text-none" href="https://github.com/ZeroBlueXYZ/FileDirect/releases/latest">
+            {{ $t("message.home.moreDownloadOptions") }}
+          </v-btn>
+        </v-row>
       </v-card>
       <v-divider class="border-opacity-0" thickness="20"></v-divider>
-      <v-row justify="center">
-        <v-btn variant="text" prepend-icon="mdi-download" class="text-none" href="https://github.com/ZeroBlueXYZ/FileDirect/releases/latest">
-          {{ $t("message.home.moreDownloadOptions") }}
-        </v-btn>
-      </v-row>
     </v-responsive>
   </v-container>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import microsoftStoreBadge from '@/assets/microsoft-store-badge.svg';
-import macAppStoreBadge from '@/assets/mac-app-store-badge.svg';
 import appStoreBadge from '@/assets/app-store-badge.svg';
 import googlePlayBadge from '@/assets/google-play-badge.png';
+import macAppStoreBadge from '@/assets/mac-app-store-badge.svg';
+import microsoftStoreBadge from '@/assets/microsoft-store-badge.svg';
 
 class Store {
   constructor (name, appUrl, badgeUrl) {
@@ -50,10 +50,10 @@ class Store {
 }
 
 const stores = ref([
-  new Store('Microsoft Store', 'https://www.microsoft.com/store/apps/9NPKG5X6W2SZ', microsoftStoreBadge),
-  new Store('Mac App Store', 'https://apps.apple.com/app/zeroblue-anysend/id6470259250', macAppStoreBadge),
   new Store('App Store', 'https://apps.apple.com/app/zeroblue-anysend/id6470259250', appStoreBadge),
   new Store('Google Play', 'https://play.google.com/store/apps/details?id=xyz.zeroblue.anysend', googlePlayBadge),
+  new Store('Mac App Store', 'https://apps.apple.com/app/zeroblue-anysend/id6470259250', macAppStoreBadge),
+  new Store('Microsoft Store', 'https://www.microsoft.com/store/apps/9NPKG5X6W2SZ', microsoftStoreBadge),
 ])
 
 </script>
