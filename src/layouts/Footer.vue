@@ -14,7 +14,7 @@
       </v-row>
       <v-row justify="center" class="text-caption">
         <span >
-          {{ $t("message.footer.copyright") }}
+          Copyright © 2023-2024 Zhaoming Zhang
         </span>
       </v-row>
     </v-col>
